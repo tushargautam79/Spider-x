@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front end</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<style type="text/css">
+		body{
+			background-color: #FAFAFA;
+		}
+		#div{
+			margin-top: 8%;
+		}
+		#head{
+			font-weight: 900;
+			text-align: center;
+			font-size: 2vw;
+			padding-top: 16%;
+			padding-bottom: 5%;
+		}
+		#image1{
+			float:left;
+			height:60%;
+			margin-left:20%;
+			position:relative;
+			padding-top:0px;
+			height: 35vw;
+			width: 20vw;
+		}
+		#image2{
+			float:right;
+			height:60%;
+			margin-right:20%;
+			position:relative;
+			padding-top:0px;
+			height: 35vw;
+			width: 20vw;
+		}
+		#text1{
+			text-align: center;
+			font-size:2vw;
+			margin-top:0.2%;
+		}
+		#text2{
+			text-align: center;
+			font-size:2vw;
+			margin-top:0.1%;
+		}
+		#button{
+			text-align:center;
+			border-radius:500px;
+			margin-left: 40%;
+			font-size: 2vw;
+			background-color: white;
+			padding-left: 2%;
+			padding-right: 2%;
+			font-weight: 400;
+		}
+		.row button:hover
+		{
+			background-color: #7442c8 !important;
+			color: white !important;
+			font-weight: 500 !important;
+		}
+		#between{
+			font-weight:1100 !important;
+			margin-top: 3%;
+			text-align: center;
+		}
+		.dot {
+				  height: 25px;
+				  width: 25px;
+				  background-color: #bbb;
+				  border-radius: 50%;
+				  display: inline-block;
+				  margin-bottom: 1%;
+				}
+		#dot1{
+			background-color: red;
+			margin-left: 45%;
+		}
+		#bottom{
+			margin-top: 7%;
+		}
+		#bottom1{
+			font-family: Poppins-Bold;
+			color: #707070;
+			font-size: 4vw;
+		}
+		iframe{
+			margin-left:5%;
+		}
+		#color1:hover{
+			background-color: #CBEBFF !important;
+
+		}
+		#color1{
+			background-color: white;
+			border-radius: 40px;
+		}
+		#color1 p{
+			color: #707070;
+			font-size:3.5vw;
+		}
+		#registration{
+			background-color:#CBEBFF; 
+		}
+		#registration h1{
+			text-align: center;
+			color: #000000;
+		}
+		#bottom2 button{
+			color: white;
+			background-color: black;
+			height: 2vw;
+
+		}
+		#two{
+			border-radius: 200;
+			height:16vw;
+			width: 2.5vw;
+		}
+		#one{
+			height: 6vw;
+			width: 2.5vw !important;
+			margin-top: 5vw;
+			border-radius: 250;
+		}
+
+		#store{
+			display: inline-block;
+			margin-top: 0px;
+			padding-bottom: 5vw;
+
+		}
+		#element p{
+			float: right;
+			font-size: 1vw;
+		}
+		#element span{
+			color: #707070;
+			font-weight: 700;
+			font-size: 1vw;
+		}
+		#book{
+			margin-left: 50%;
+			border-radius: 100px;
+			font-size: 1.1vw;
+			color: #707070;
+			margin-top: 2vw;
+			background-color: white;
+		}
+		#text3{
+			text-align: center;
+			color: #000000;
+			margin-top: 7.5%;
+			font-weight: 600;
+			font-size: 2.2vw;
+		}
+		#element{
+			margin-top: 8%;
+		}
+		#end{
+			text-align: center;
+			font-size: 1.2vw;
+			margin-top: 4vw;
+			font-weight: 600;
+		}
+		#social img{
+			height: 1.5vw;
+			width: 1.6vw;
+			border-radius:900px;
+			display: inline-block;
+		}
+		.form-inline a{
+			margin-left: 1.6vw;
+			font-size: 1.3vw;
+			font-weight: 500;
+			color: #707070 !important;	
+			font-family:Poppins-Bold;
+		}
+		.form-inline{
+			margin-right: 7vw !important	;
+		}
+		#top{
+			background-image:linear-gradient(to bottom, #CBEBFF,#E0FFFF);
+		}
+		#top button{
+			margin-left: 2vw;
+			margin-bottom: 9vw;
+			background-color: transparent;
+			font-size: 1.5vw;
+			font-weight:600;
+		}
+		#bind{
+			margin-top:2.5vw;
+		}
+		#bind p{
+			font-family:Poppins-SemiBold; 
+			color:#707070;
+			margin-bottom: 0px;
+			font-weight: 600;
+			font-size: 1.5vw;
+
+		}
+		#bind input{
+			color:#707070;
+			opacity:0.7411764705882353;
+			font-family:Poppins-Light;
+			margin-top: 2px;
+			width: 20vw;
+			height: 2.1vw;
+		}
+		#about{
+			background-color: #FFFFFF;
+			text-align: center;
+			font-size: 2vw;
+			font-weight: 600;
+			padding-top: 3vw;
+			padding-bottom: 2vw;
+		}
+		#icon span{
+			font-family: SegoeUI-Bold;
+			color: #000000;
+			font-weight:600;
+			font-size: 1.2vw;
+		}
+		#icon{
+			text-align: center;
+			font-weight: 400;
+			margin-top: 3vw;
+		}
+	@keyframes .rotate90{
+    0% {
+        transform: perspective(400px) scaleX(1);
+    }
+
+    100% {
+        transform: perspective(400px) scaleX(-1);
+    }
+}
+
+@keyframes  .rotate90{
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(180deg);
+    }
+}
+	</style>
+</head>
+<body>
+    <nav style="background-color: #FAFAFA;padding-bottom: 0px;padding-top: 0px;" class="navbar sticky-top navbar-light justify-content-between">
+  		<a class="navbar-brand"><img style="height: 4vw;width:15vw;margin-left:4vw;" src="logo.png"></a>
+  		<form class="form-inline">
+    		<a href="#">About Us</a>
+    		<a href="#">Our offerings</a>
+    		<a href="#">Blog</a>
+    		<a style="" href="#">Contact Us</a>
+		  </form>
+	</nav>
+		<div id="top">
+				<h1 style="text-align: center;color:#6634CB;opacity: 0.9019607843137255;font-size:4vw;font-weight: 700;">"Let the smallest step<br>make the biggest change"
+				</h1>
+				<div class="container">
+					  <div class="row">
+						<div class="col-4">
+							<form>
+								<div id="bind">
+										<p>Name</p>
+										<input type="text" id="name" placeholder=" Rohit Yadav">
+								</div>
+								<div id="bind">
+										<p>Mobile Number</p>
+										<input type="text" id="mobile" placeholder=" 1234567891">
+								</div>
+								<div id="bind">
+										<p>Business Name
+										</p>
+										<input type="text" id="work" placeholder="Sardarjimeetshop">
+								</div>
+							</form>
+							<button id="book">Book Demo</button>
+					</div>
+					<div class="col-8">
+						<img style="margin-top:10vw;margin-left:0px;position: absolute; width:25vw;height:20vw;" src="top1.png">
+						<img style="margin-top:0vw;margin-left:20vw;position: absolute;width:20vw;height:15vw;" src="top2.png">
+						<img style="margin-top:7vw;margin-left:40vw;position: absolute;width: 20vw;height:15vw;" src="top3.png">
+						<img style="margin-top:18vw;margin-left:25vw;position: absolute;width:20vw;height:15vw;" src="top4.png">
+					</div>
+				  </div>
+				</div>
+		</div>
+	<div id="about">
+		<h1 style="font-weight:900;font-size:3vw;margin-bottom: 2vw;">About us</h1>
+		<p>SpiderG k sath banaiye apna business aasan.<br>	
+		Badhaayein ek kadam online business ki taraf.</p>
+	</div>
+	<div style="padding-bottom: 3vw;background-image: linear-gradient(to bottom,#E0FFFF,#FAFAFA);">
+		<div class="container" style="margin-bottom: 2vw;background-image: linear-gradient(to bottom,#E0FFFF,#FAFAFA);">
+			<iframe width="80%" height="450vw"
+					src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+			</iframe>
+		</div>
+	</div>
+	<div>
+
+		<img  style="width:100%;height:10vw;" src="between.png">
+	</div>
+	<div  id="icon" class="row">
+		<div class="col-4">
+			<img  src="icon1.png" class="rotate90">
+			<P><span>crore +</span><br>Transations Recorded so far</P>
+		</div>
+		<div class="col-4">
+			<img src="icon2.png" class="rotate90">
+			<p><span>14 Thousand +</span><br>Businesses Using us</p>
+		</div>
+		<div class="col-4">
+			<img src="icon3.png" class="rotate90">
+			<p><span>Around 70 +</span><br>Cities</p>
+		</div>
+	</div>
+	<div id="photos">
+		<div class="row">
+			<div class="col-4">
+				<img  style="margin-left: 0px;position:absolute;height:80%;width:90%;margin-top: 14vw;" src="back.png">
+				<img id="image1" src="img4.png">
+			</div>
+			<div class="col-8">
+				<h1 id="head">Collections</h1>
+				<p id="text1">Automate your online collection cycle with smart</p>
+				<p id="text2">reminders and Auto-reconciliation</p>
+				<button id="button" align:center>Know more</button>
+			</div>
+		</div>
+		<div id="div" class="row">
+			<div class="col-8">
+				<h1 id="head">Payment Website</h1>
+				<p id="text1">Improve your digital identity and showcase</p>
+				<p id="text2">your products and services.</p>
+				<button id="button" align:center>Know more</button>
+			</div>
+			<div class="col-4">
+				<img  style="margin-right:0px;position:absolute;height:80%;width:90%;margin-top: 14vw;" src="back1.png">
+				<img id="image2" src="img4.png">
+			</div>
+		</div>
+		<div>
+			<h1 id="between" style="padding-bottom:2vw;">WEB COMMERCE
+			</h1>
+
+		</div>
+
+		<div id="div" class="row">
+			<div class="col-4">
+				<img  style="margin-left:0px;position:absolute;height:80%;width:90%;margin-top: 14vw;" src="back.png">
+				<img id="image1" src="img3.png">
+			</div>
+			<div class="col-8">
+				<h1 id="head">My Cart</h1>
+				<p id="text1">Get online orders from your customers</p>
+				<p id="text2">with SpiderG.</p>
+				<button id="button" align:center>Know more</button>
+			</div>
+		</div>
+
+		<div id="div" class="row">
+					<div class="col-8">
+						<h1 id="head">Get Appointment</h1>
+						<p id="text1">Wonder why you lost a customer in your</p>
+						<p id="text1">absence? Now with SpiderG,get your</p>
+						<p id="text2">appointments booked.</p>
+						<button id="button" align:center>Know more</button>
+					</div>
+					<div class="col-4">
+						<img  style="margin-right:0vw;position:absolute;height:80%;width:90%;margin-top: 14vw;" src="back1.png">
+						<img id="image2" src="img4.png">
+					</div>
+				</div>
+	</div>
+	<div id="bottom" class="container">
+		<h1 id="bottom1">What people say about us...</h1>
+		<div id="color1" class="jumbotron">
+			<iframe width="90%" height="450vw"
+				src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+			</iframe>
+			<div>
+				<p style="margin-left: 5%;">"A best Application that can make ease<br>&nbsp;collections"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Ram</p>
+			</div>
+		</div>
+		<div>
+			<span id ="dot1" class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+		<div class="jumbotron" id="registration">
+			<h1>Registration Form</h1>
+			<div class="row">
+				<div class="col-4">
+					<form id="element">
+						<p><span>Name&nbsp;:</span>&nbsp;
+							<input type="text" id="name" placeholder=" Rohit Yadav">
+						</p>
+						<p><span>Mobile Number&nbsp;:</span>&nbsp;
+							<input type="text" id="mobile" placeholder=" 1234567891">
+						</p>
+						<p><span>Name&nbsp;:</span>&nbsp;
+							<input type="text" id="work" placeholder="Sardarjimeetshop">
+						</p>
+					</form>
+				<button id="book">Book Demo</button>
+			</div>
+			<div id="bottom2"class="col-8">
+				<p id="text3">"Learn how spiderG can 	help you grow<br>
+   					your business and switch to digital"
+   				</p>
+   				<div class="row">
+   					<img  id="one"src="apple.png" class="col-6">
+   					<img id="two" src="google.png" class="col-6">
+   				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<P id="end">" SpiderG , India's first ERP integrated e-invoicing provider for SME's , today launched it's free e-invoicing app. "</P>
+		<p style="color: #6734CB" id="end">- Read Article</p>
+		<div style="margin-top: 10vw;" class="row">
+			<div style="text-align: left; color: #000000;font-family:SegoeUI;font-weight:0!important;font-size:1vw;" class="col-6">
+				<p>Support / Sales: +91-8262843544 / +	91-9075007509<br>
+					Terms & Conditions | Privacy Policy
+				</p>
+			</div>
+			<div style="text-align: right; color: #000000;font-family: SegoeUI;" class="col-6">
+				<p id="social">
+					<img id="facebook" src="social.png">
+					<img id="twitter" src="social2.png">
+					<img id="linkiden" src="social3.png">
+					<img id="youtube" src="social4.png">
+				</p>
+				<p style="font-family: SegoeUI;color: #000000;font-weight:0!important;font-size:1vw;">© 2020, Gladiris Technologies Pvt Ltd. All rights reserved</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
